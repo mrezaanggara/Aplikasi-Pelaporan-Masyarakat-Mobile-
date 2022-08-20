@@ -1,4 +1,4 @@
-# Skripsi
+# Community Reporting Application
 
 A Mobile-Based Community Reporting Application built using Flutter as a requirement for the author's thesis to get a bachelor's degree.
 
