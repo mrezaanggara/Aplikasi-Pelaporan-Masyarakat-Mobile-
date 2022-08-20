@@ -72,9 +72,16 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
       builder: (BuildContext context, AsyncSnapshot<List<Infrastruktur>> snapshot) {
         if (snapshot.hasError) {
           return Center(
-            child: Text(
-                "Something wrong with message: ${snapshot.error.toString()}"),
-          );
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/database.png', scale: 5),
+                  SizedBox(height:20),
+                  Text("Server sedang bermasalah.")
+                ],
+              ),
+            );
         } else if (snapshot.connectionState == ConnectionState.done) {
           final List<Infrastruktur> infrastruktur = snapshot.data;
           if (infrastruktur != null){
@@ -108,9 +115,9 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/database.png', scale: 5),
+                  Image.asset('assets/images/no_data.jpg', scale: 6),
                   SizedBox(height:20),
-                  Text("Server sedang bermasalah.")
+                  Text("Belum ada Laporan.")
                 ],
               ),
             );
@@ -130,9 +137,16 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
       builder: (BuildContext context, AsyncSnapshot<List<Infrastruktur>> snapshot) {
         if (snapshot.hasError) {
           return Center(
-            child: Text(
-                "Something wrong with message: ${snapshot.error.toString()}"),
-          );
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/database.png', scale: 5),
+                  SizedBox(height:20),
+                  Text("Server sedang bermasalah.")
+                ],
+              ),
+            );
         } else if (snapshot.connectionState == ConnectionState.done) {
           final List<Infrastruktur> infrastruktur = snapshot.data;
           if (infrastruktur != null){
@@ -166,9 +180,9 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/database.png', scale: 5),
+                  Image.asset('assets/images/no_data.jpg', scale: 6),
                   SizedBox(height:20),
-                  Text("Server sedang bermasalah.")
+                  Text("Belum ada Laporan.")
                 ],
               ),
             );
@@ -188,9 +202,16 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
       builder: (BuildContext context, AsyncSnapshot<List<Infrastruktur>> snapshot) {
         if (snapshot.hasError) {
           return Center(
-            child: Text(
-                "Something wrong with message: ${snapshot.error.toString()}"),
-          );
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/database.png', scale: 5),
+                  SizedBox(height:20),
+                  Text("Server sedang bermasalah.")
+                ],
+              ),
+            );
         } else if (snapshot.connectionState == ConnectionState.done) {
           final List<Infrastruktur> infrastruktur = snapshot.data;
           if (infrastruktur != null){
@@ -224,9 +245,9 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/database.png', scale: 5),
+                  Image.asset('assets/images/no_data.jpg', scale: 6),
                   SizedBox(height:20),
-                  Text("Server sedang bermasalah.")
+                  Text("Belum ada Laporan.")
                 ],
               ),
             );
@@ -246,9 +267,16 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
       builder: (BuildContext context, AsyncSnapshot<List<Infrastruktur>> snapshot) {
         if (snapshot.hasError) {
           return Center(
-            child: Text(
-                "Something wrong with message: ${snapshot.error.toString()}"),
-          );
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/database.png', scale: 5),
+                  SizedBox(height:20),
+                  Text("Server sedang bermasalah.")
+                ],
+              ),
+            );
         } else if (snapshot.connectionState == ConnectionState.done) {
           final List<Infrastruktur> infrastruktur = snapshot.data;
           if (infrastruktur != null){
@@ -282,9 +310,9 @@ class _InfrastrukturListState extends State<InfrastrukturList> with SingleTicker
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset('assets/images/database.png', scale: 5),
+                  Image.asset('assets/images/no_data.jpg', scale: 6),
                   SizedBox(height:20),
-                  Text("Server sedang bermasalah.")
+                  Text("Belum ada Laporan.")
                 ],
               ),
             );
