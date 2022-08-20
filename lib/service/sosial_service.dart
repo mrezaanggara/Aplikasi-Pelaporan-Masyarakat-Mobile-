@@ -12,7 +12,7 @@ class SosialApiService{
     }
   }
   Future<List<Sosial>> getSosialDiterima() async {
-    final response = await http.get(Uri.parse("https://reportcases.000webhostapp.com/api/sosial/sosialditerima"));
+    final response = await http.get(Uri.parse("https://reportcases.000webhostapp.com/api/sosial/sosialDiterima"));
     if (response.statusCode == 200) {
       return sosialFromJson(response.body);
     } else {
